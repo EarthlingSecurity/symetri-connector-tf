@@ -11,7 +11,7 @@ resource "aws_iam_role" "symetri-role" {
         Effect = "Allow"
         Principal = {
           AWS = [
-            "arn:aws:iam::182399714842:user/symetri"
+            "arn:aws:iam::182399714842:user/backend_user"
           ]
         }
         Action = "sts:AssumeRole"

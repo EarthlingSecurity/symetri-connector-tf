@@ -44,7 +44,7 @@ Terraform will ask for confirmation before proceeding. Type `yes` to allow it to
 
 Once Terraform has applied the configuration, verify that the IAM role and policies were created successfully in the AWS Management Console:
 
-- **IAM Role**: Go to the IAM section in the AWS Console, and you should see the role `ace-engine-audit-scan-role` listed under "Roles."
+- **IAM Role**: Go to the IAM section in the AWS Console, and you should see the role `symetri-audit-scan-role` listed under "Roles."
 - **Attached Policies**: Verify that the SecurityAudit, ViewOnlyAccess and Inventory policies are attached to the role.
 - **External ID**: Open the Trust Relationships tab of the IAM role and confirm that the external ID condition is present in the AssumeRole policy.
 
