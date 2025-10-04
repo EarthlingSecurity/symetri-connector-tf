@@ -1,5 +1,6 @@
 provider "aws" {
   region = "us-east-1" # Change as needed  
+  profile = "" # Change profile as needed
 }
 
 resource "aws_iam_role" "symetri-role" {
@@ -10,9 +11,7 @@ resource "aws_iam_role" "symetri-role" {
       {
         Effect = "Allow"
         Principal = {
-          AWS = [
-            "arn:aws:iam::182399714842:user/backend_user"
-          ]
+          AWS = "arn:aws:iam::182399714842:user/backend_user"
         }
         Action = "sts:AssumeRole"
         Condition = {
