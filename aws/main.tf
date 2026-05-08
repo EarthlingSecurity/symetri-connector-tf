@@ -42,12 +42,6 @@ resource "aws_iam_policy" "inventory_collect_policy" {
   policy = file("${path.module}/inventory_collect_policy.json")
 }
 
-resource "aws_iam_policy" "inventory_mutate_policy" {
-  name = "inventory_mutate_policy"
-  description = "Allows inventory mutation operations"
-  policy = file("${path.module}/inventory_mutate_policy.json")
-}
-
 resource "aws_iam_policy" "inventory_collect_policy_2" {
   name = "inventory_collect_policy_2"
   description = "Allows inventory collection operations"
@@ -57,11 +51,6 @@ resource "aws_iam_policy" "inventory_collect_policy_2" {
 resource "aws_iam_role_policy_attachment" "attach_inventory_collect" {
   role = aws_iam_role.symetri-role.name
   policy_arn = aws_iam_policy.inventory_collect_policy.arn
-}
-
-resource "aws_iam_role_policy_attachment" "attach_inventory_mutate" {
-  role = aws_iam_role.symetri-role.name
-  policy_arn = aws_iam_policy.inventory_mutate_policy.arn
 }
 
 resource "aws_iam_role_policy_attachment" "attach_inventory_collect_2" {
