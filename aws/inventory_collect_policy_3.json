@@ -8,6 +8,9 @@
             "Action": [
                 "appflow:DescribeConnectorProfiles",
                 "appflow:DescribeFlow",
+                "appstream:DescribeFleets",
+                "appstream:DescribeStacks",
+                "appstream:ListTagsForResource",
                 "aps:DescribeLoggingConfiguration",
                 "aps:DescribeWorkspace",
                 "aps:ListRuleGroupsNamespaces",
@@ -17,6 +20,8 @@
                 "arc-region-switch:ListTagsForResource",
                 "auditmanager:GetAssessment",
                 "batch:DescribeJobQueues",
+                "chatbot:DescribeSlackChannelConfigurations",
+                "chatbot:ListMicrosoftTeamsChannelConfigurations",
                 "cloudhsm:DescribeBackups",
                 "cloudhsm:DescribeClusters",
                 "codepipeline:ListTagsForResource",
@@ -109,7 +114,11 @@
                 "timestream:ListTables",
                 "timestream:ListTagsForResource",
                 "verifiedpermissions:GetPolicyStore",
-                "verifiedpermissions:ListPolicyStores"
+                "verifiedpermissions:ListPolicyStores",
+                "wickr:ListNetworks",
+                "workspaces-web:GetPortal",
+                "workspaces-web:ListPortals",
+                "workspaces-web:ListTagsForResource"
             ]
         },
         {
