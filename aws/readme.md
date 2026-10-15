@@ -53,6 +53,7 @@ Once Terraform has applied the configuration, verify that the IAM role and polic
 - `main.tf` - Main Terraform configuration file
 - `Inventory_collect_policy.json` - IAM policy for inventory collection
 - `Inventory_collect_policy_2.json` - Additional inventory collection policy
+- `inventory_collect_policy_3.json` - Read-only permissions for the inventory enrichment collectors (Keyspaces limited to its system tables)
 - `Inventory_mutate_policy.json` - IAM policy for inventory mutations
 
 ## Cleanup

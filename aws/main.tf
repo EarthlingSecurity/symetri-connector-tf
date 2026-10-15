@@ -56,4 +56,17 @@ resource "aws_iam_role_policy_attachment" "attach_inventory_collect" {
 resource "aws_iam_role_policy_attachment" "attach_inventory_collect_2" {
   role = aws_iam_role.symetri-role.name
   policy_arn = aws_iam_policy.inventory_collect_policy_2.arn
+}
+
+# Read-only actions for the inventory enrichment collectors that SecurityAudit, ViewOnlyAccess and
+# the two policies above do not grant. Keyspaces is limited to its system tables.
+resource "aws_iam_policy" "inventory_collect_policy_3" {
+  name = "inventory_collect_policy_3"
+  description = "Allows inventory collection operations"
+  policy = file("${path.module}/inventory_collect_policy_3.json")
+}
+
+resource "aws_iam_role_policy_attachment" "attach_inventory_collect_3" {
+  role = aws_iam_role.symetri-role.name
+  policy_arn = aws_iam_policy.inventory_collect_policy_3.arn
 } 
