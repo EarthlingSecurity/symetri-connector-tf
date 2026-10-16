@@ -83,6 +83,7 @@
                 "iottwinmaker:ListTagsForResource",
                 "kafka:GetClusterPolicy",
                 "kinesisanalytics:DescribeApplication",
+                "lex:GetBot",
                 "lex:ListTagsForResource",
                 "macie2:DescribeClassificationJob",
                 "macie2:GetMacieSession",
