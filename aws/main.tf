@@ -69,4 +69,15 @@ resource "aws_iam_policy" "inventory_collect_policy_3" {
 resource "aws_iam_role_policy_attachment" "attach_inventory_collect_3" {
   role = aws_iam_role.symetri-role.name
   policy_arn = aws_iam_policy.inventory_collect_policy_3.arn
+}
+
+resource "aws_iam_policy" "inventory_collect_policy_4" {
+  name = "inventory_collect_policy_4"
+  description = "Allows inventory collection operations"
+  policy = file("${path.module}/inventory_collect_policy_4.json")
+}
+
+resource "aws_iam_role_policy_attachment" "attach_inventory_collect_4" {
+  role = aws_iam_role.symetri-role.name
+  policy_arn = aws_iam_policy.inventory_collect_policy_4.arn
 } 
