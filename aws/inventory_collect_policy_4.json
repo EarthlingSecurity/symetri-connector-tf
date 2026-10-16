@@ -26,6 +26,7 @@
                 "ds:DescribeSettings",
                 "ds:DescribeTrusts",
                 "ds:ListLogSubscriptions",
+                "glue:GetDatabase",
                 "grafana:DescribeWorkspaceAuthentication",
                 "imagebuilder:GetDistributionConfiguration",
                 "imagebuilder:GetInfrastructureConfiguration",
