@@ -5,6 +5,7 @@
             "Sid": "InventoryCollectReadOnly4",
             "Effect": "Allow",
             "Action": [
+                "appstream:DescribeImages",
                 "auditmanager:GetSettings",
                 "chime:GetAppInstanceRetentionSettings",
                 "chime:GetVoiceConnectorLoggingConfiguration",
