@@ -52,7 +52,14 @@
                 "servicecatalog:DescribePortfolioShares",
                 "verifiedpermissions:ListIdentitySources",
                 "verifiedpermissions:ListPolicies",
-                "wickr:GetNetworkSettings"
+                "wickr:GetNetworkSettings",
+                "workspaces-web:GetBrowserSettings",
+                "workspaces-web:GetDataProtectionSettings",
+                "workspaces-web:GetIpAccessSettings",
+                "workspaces-web:GetNetworkSettings",
+                "workspaces-web:GetSessionLogger",
+                "workspaces-web:GetUserAccessLoggingSettings",
+                "workspaces-web:GetUserSettings"
             ],
             "Resource": "*"
         }
